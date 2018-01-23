@@ -18,7 +18,7 @@ exports.handler = function (event, context, callback) {
 		});
 
 	sns.getTopicAttributes({
-		TopicArn: 'arn:aws:sns:us-east-1:480964559519:upulie_topic_jan17'
+		TopicArn: 'arn:aws:sns:us-east-1:480964559519:Test'
 	}).promise()
 		.then(data => {
 			// your code goes here
