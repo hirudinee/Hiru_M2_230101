@@ -7,7 +7,7 @@ exports.handler = function (event, context, callback) {
 		TopicArn: 'arn:aws:sns:us-east-1:480964559519:hiru_topic'
 	}).promise()
 		.then(data => {
-			// your code goes here
+			// your code goes here changed the comment
 
 			callback(null, data);
 		})
