@@ -12,7 +12,7 @@ exports.handler = function (event, context, callback) {
 			callback(null, data);
 		})
 		.catch(err => {
-			// error handling goes here
+			// error handling goes here Branching out
 			callback(null, err);
 		});
 
