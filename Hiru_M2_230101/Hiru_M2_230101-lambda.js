@@ -12,10 +12,11 @@ exports.handler = function (event, context, callback) {
 			callback(null, data);
 		})
 		.catch(err => {
-			// error handling goes here Branching out
+			// error handling goes here
+			console.log('this log is added for error');
 			callback(null, err);
 		});
 
 
-	callback(null, 'Successfully executed');
+	//callback(null, 'Successfully executed');
 }
