@@ -8,7 +8,7 @@ exports.handler = function (event, context, callback) {
 	}).promise()
 		.then(data => {
 			// your code goes here
-			console.log('this log is added for data');
+			console.log('this log is added for data', data);
 			//callback(null, data);
 		})
 		.catch(err => {
@@ -22,7 +22,7 @@ exports.handler = function (event, context, callback) {
 	}).promise()
 		.then(data => {
 			// your code goes here
-			console.log('this log is added for data upulie');
+			console.log('this log is added for data upulie', data);
 			//callback(null, data);
 		})
 		.catch(err => {
@@ -32,5 +32,5 @@ exports.handler = function (event, context, callback) {
 		});
 
 
-	//callback(null, 'Successfully executed');
+	callback(null, 'Successfully executed');
 }
