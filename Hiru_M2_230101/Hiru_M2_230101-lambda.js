@@ -4,7 +4,7 @@ exports.handler = function (event, context, callback) {
 
 
 	sns.getTopicAttributes({
-		TopicArn: 'arn:aws:sns:us-east-1:480964559519:hiru_topic'
+		TopicArn: 'arn:aws:sns:us-east-1:480964559519:si'
 	}).promise()
 		.then(data => {
 			// your code goes here
