@@ -9,12 +9,26 @@ exports.handler = function (event, context, callback) {
 		.then(data => {
 			// your code goes here
 			console.log('this log is added for data');
-			callback(null, data);
+			//callback(null, data);
 		})
 		.catch(err => {
 			// error handling goes here
 			console.log('this log is added for error');
-			callback(null, err);
+			//callback(null, err);
+		});
+
+	sns.getTopicAttributes({
+		TopicArn: 'arn:aws:sns:us-east-1:480964559519:upulie_topic_jan17'
+	}).promise()
+		.then(data => {
+			// your code goes here
+			console.log('this log is added for data upulie');
+			//callback(null, data);
+		})
+		.catch(err => {
+			// error handling goes here
+			console.log('this log is added for error upulie');
+			//callback(null, err);
 		});
 
 
